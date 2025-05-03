@@ -1,0 +1,23 @@
+$pink-color: #ef5da8;
+$blue-color: #3877ee;
+
+.big-years {
+  position: absolute;
+  top: calc(15vh + 19vw - 6.5vw);
+  width: 60%;
+  left: 20%;
+  display: flex;
+  justify-content: space-between;
+
+  & h1 {
+    font-size: 10vw;
+
+    &:nth-last-child(even) {
+      color: $blue-color;
+    }
+
+    &:nth-last-child(odd) {
+      color: $pink-color;
+    }
+  }
+}

@@ -1,4 +1,6 @@
 $primary-color: #42567a;
+$pink-color: #ef5da8;
+$blue-color: #3877ee;
 
 * {
   margin: 0;
@@ -22,5 +24,13 @@ body {
   position: absolute;
   height: 100vh;
   width: 1px;
+  background-color: $primary-color;
+}
+
+.second-middle-line {
+  position: absolute;
+  top: calc(15vh + 19vw);
+  height: 1px;
+  width: 100%;
   background-color: $primary-color;
 }
