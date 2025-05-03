@@ -6,12 +6,14 @@ interface BlockWheelProps {
   historicalDates: HistoricalDate[];
   choosenDate: number;
   setChoosenDate: Dispatch<SetStateAction<number>>;
+  setPreviousDate: Dispatch<SetStateAction<number>>;
 }
 
 export default function BlockWheel({
   historicalDates,
   choosenDate,
   setChoosenDate,
+  setPreviousDate,
 }: BlockWheelProps) {
   const buttonsQuantity: number = historicalDates.length;
   const wheelRotation: number = (360 / buttonsQuantity) * choosenDate;
@@ -40,6 +42,7 @@ export default function BlockWheel({
             }}
             onClick={() => {
               setChoosenDate(index);
+              setPreviousDate(choosenDate);
             }}
           >
             {index + 1}

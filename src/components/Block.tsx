@@ -7,9 +7,11 @@ import { historicalDates } from "../historicalDates";
 import { useState } from "react";
 import BlockWheelArrows from "./BlockWheelArrows";
 import BlockBigYears from "./BlockBigYears";
+import BlockSwiper from "./BlockSwiper";
 
 export default function Block() {
   const [choosenDate, setChoosenDate] = useState<number>(0);
+  const [previousDate, setPreviousDate] = useState<number>(0);
 
   return (
     <section className="block">
@@ -18,13 +20,20 @@ export default function Block() {
         historicalDates={historicalDates}
         choosenDate={choosenDate}
         setChoosenDate={setChoosenDate}
+        setPreviousDate={setPreviousDate}
       />
       <BlockWheelArrows
         historicalDates={historicalDates}
         choosenDate={choosenDate}
         setChoosenDate={setChoosenDate}
+        setPreviousDate={setPreviousDate}
       />
       <BlockBigYears
+        historicalDates={historicalDates}
+        choosenDate={choosenDate}
+        previousDate={previousDate}
+      />
+      <BlockSwiper
         historicalDates={historicalDates}
         choosenDate={choosenDate}
       />

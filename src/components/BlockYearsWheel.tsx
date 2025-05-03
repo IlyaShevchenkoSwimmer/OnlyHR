@@ -7,12 +7,14 @@ interface BlockYearsWheelProps {
   historicalDates: HistoricalDate[];
   choosenDate: number;
   setChoosenDate: Dispatch<SetStateAction<number>>;
+  setPreviousDate: Dispatch<SetStateAction<number>>;
 }
 
 export default function BlockYearsWheel({
   historicalDates,
   choosenDate,
   setChoosenDate,
+  setPreviousDate,
 }: BlockYearsWheelProps) {
   return (
     <section className="years-wheel">
@@ -20,6 +22,7 @@ export default function BlockYearsWheel({
         historicalDates={historicalDates}
         choosenDate={choosenDate}
         setChoosenDate={setChoosenDate}
+        setPreviousDate={setPreviousDate}
       />
     </section>
   );

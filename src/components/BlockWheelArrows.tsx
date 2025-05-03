@@ -6,12 +6,14 @@ interface BlockWheelArrowsProps {
   historicalDates: HistoricalDate[];
   choosenDate: number;
   setChoosenDate: Dispatch<SetStateAction<number>>;
+  setPreviousDate: Dispatch<SetStateAction<number>>;
 }
 
 export default function BlockWheelArrows({
   historicalDates,
   choosenDate,
   setChoosenDate,
+  setPreviousDate,
 }: BlockWheelArrowsProps) {
   return (
     <article className="block-arrows">
@@ -31,6 +33,7 @@ export default function BlockWheelArrows({
           }`}
           onClick={() => {
             setChoosenDate(choosenDate - 1);
+            setPreviousDate(choosenDate);
           }}
           disabled={choosenDate === 0 ? true : false}
         >
@@ -44,12 +47,13 @@ export default function BlockWheelArrows({
           }`}
           onClick={() => {
             setChoosenDate(choosenDate + 1);
+            setPreviousDate(choosenDate);
           }}
           disabled={choosenDate === historicalDates.length - 1 ? true : false}
         >
           <img
             src="./arrow.png"
-            alt="left"
+            alt="right"
             style={{ transform: "rotate(180deg)" }}
           />
         </button>
