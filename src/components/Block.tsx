@@ -5,6 +5,7 @@ import BlockYearsWheel from "./BlockYearsWheel";
 
 import { historicalDates } from "../historicalDates";
 import { useState } from "react";
+import BlockWheelArrows from "./BlockWheelArrows";
 
 export default function Block() {
   const [choosenDate, setChoosenDate] = useState<number>(0);
@@ -13,6 +14,11 @@ export default function Block() {
     <section className="block">
       <BlockHeader />
       <BlockYearsWheel
+        historicalDates={historicalDates}
+        choosenDate={choosenDate}
+        setChoosenDate={setChoosenDate}
+      />
+      <BlockWheelArrows
         historicalDates={historicalDates}
         choosenDate={choosenDate}
         setChoosenDate={setChoosenDate}
