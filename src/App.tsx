@@ -1,9 +1,12 @@
 import "./App.scss";
 
+import Block from "./components/Block";
+
 export default function App() {
   return (
     <>
-      <h1>Hello!</h1>
+      <div className="middle-line"></div>
+      <Block />
     </>
   );
 }

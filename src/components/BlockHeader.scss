@@ -1,0 +1,21 @@
+$pink-color: #ef5da8;
+$blue-color: #3877ee;
+
+.header {
+  position: absolute;
+  padding-left: 3rem;
+
+  font-weight: 700;
+  font-size: 1.5rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, $blue-color, $pink-color);
+    height: 100%;
+  }
+}

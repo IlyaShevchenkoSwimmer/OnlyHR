@@ -1,3 +1,26 @@
+$primary-color: #42567a;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: green;
+  margin: 0 auto;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  color: $primary-color;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.middle-line {
+  position: absolute;
+  height: 100vh;
+  width: 1px;
+  background-color: $primary-color;
 }
