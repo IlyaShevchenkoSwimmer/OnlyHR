@@ -41,8 +41,14 @@ export default function BlockWheel({
               }deg)`,
             }}
             onClick={() => {
-              setChoosenDate(index);
-              setPreviousDate(choosenDate);
+              const swiper = document.querySelector(
+                ".block-swiper-wrapper"
+              ) as HTMLElement;
+              swiper.style.opacity = "0";
+              setTimeout(() => {
+                setChoosenDate(index);
+                setPreviousDate(choosenDate);
+              }, 300);
             }}
           >
             {index + 1}

@@ -18,20 +18,7 @@ export default function BlockSwiper({
   const swiperRef = useRef(null);
   useEffect(() => {
     const swiper = swiperRef.current as unknown as HTMLElement;
-    swiper.animate(
-      [
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-        },
-      ],
-      {
-        duration: 1000,
-        iterations: 1,
-      }
-    );
+    swiper.style.opacity = "1";
   });
   const slides = historicalDates[choosenDate].years.map((year) => {
     return (

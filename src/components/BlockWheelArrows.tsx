@@ -32,8 +32,14 @@ export default function BlockWheelArrows({
             choosenDate === 0 ? "block-arrows__arrows--button--disabled" : ""
           }`}
           onClick={() => {
-            setChoosenDate(choosenDate - 1);
-            setPreviousDate(choosenDate);
+            const swiper = document.querySelector(
+              ".block-swiper-wrapper"
+            ) as HTMLElement;
+            swiper.style.opacity = "0";
+            setTimeout(() => {
+              setChoosenDate(choosenDate - 1);
+              setPreviousDate(choosenDate);
+            }, 300);
           }}
           disabled={choosenDate === 0 ? true : false}
         >
@@ -46,8 +52,14 @@ export default function BlockWheelArrows({
               : ""
           }`}
           onClick={() => {
-            setChoosenDate(choosenDate + 1);
-            setPreviousDate(choosenDate);
+            const swiper = document.querySelector(
+              ".block-swiper-wrapper"
+            ) as HTMLElement;
+            swiper.style.opacity = "0";
+            setTimeout(() => {
+              setChoosenDate(choosenDate + 1);
+              setPreviousDate(choosenDate);
+            }, 300);
           }}
           disabled={choosenDate === historicalDates.length - 1 ? true : false}
         >
