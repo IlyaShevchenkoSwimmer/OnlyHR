@@ -25,12 +25,20 @@ body {
   height: 100vh;
   width: 1px;
   background-color: $primary-color;
+
+  @media (max-width: 425px) {
+    display: none;
+  }
 }
 
 .second-middle-line {
   position: absolute;
   top: calc(15vh + 19vw);
   height: 1px;
-  width: 100%;
+  width: 86%;
   background-color: $primary-color;
+
+  @media (max-width: 425px) {
+    top: 40vh;
+  }
 }

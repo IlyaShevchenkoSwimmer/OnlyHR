@@ -199,4 +199,98 @@ export const historicalDates: HistoricalDate[] = [
       },
     ],
   },
+  {
+    from: 1991,
+    to: 1998,
+    title: "Волейбол",
+    years: [
+      {
+        year: 1991,
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nulla nemo beatae repellendus recusandae labore!",
+      },
+      {
+        year: 1992,
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nulla nemo beatae repellendus recusandae labore!",
+      },
+      {
+        year: 1993,
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nulla nemo beatae repellendus recusandae labore!",
+      },
+      {
+        year: 1994,
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nulla nemo beatae repellendus recusandae labore!",
+      },
+      {
+        year: 1995,
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nulla nemo beatae repellendus recusandae labore!",
+      },
+      {
+        year: 1996,
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nulla nemo beatae repellendus recusandae labore!",
+      },
+      {
+        year: 1997,
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nulla nemo beatae repellendus recusandae labore!",
+      },
+      {
+        year: 1998,
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nulla nemo beatae repellendus recusandae labore!",
+      },
+    ],
+  },
+  {
+    from: 1991,
+    to: 1998,
+    title: "Спорт",
+    years: [
+      {
+        year: 1991,
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nulla nemo beatae repellendus recusandae labore!",
+      },
+      {
+        year: 1992,
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nulla nemo beatae repellendus recusandae labore!",
+      },
+      {
+        year: 1993,
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nulla nemo beatae repellendus recusandae labore!",
+      },
+      {
+        year: 1994,
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nulla nemo beatae repellendus recusandae labore!",
+      },
+      {
+        year: 1995,
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nulla nemo beatae repellendus recusandae labore!",
+      },
+      {
+        year: 1996,
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nulla nemo beatae repellendus recusandae labore!",
+      },
+      {
+        year: 1997,
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nulla nemo beatae repellendus recusandae labore!",
+      },
+      {
+        year: 1998,
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nulla nemo beatae repellendus recusandae labore!",
+      },
+    ],
+  },
 ];

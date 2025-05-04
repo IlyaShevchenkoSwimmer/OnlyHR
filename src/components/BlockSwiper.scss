@@ -5,6 +5,11 @@ $primary-color: #42567a;
 .block-swiper-wrapper {
   position: relative;
   transition: all 0.3s ease-in-out;
+  margin-bottom: 15vh;
+
+  @media (max-width: 425px) {
+    margin-top: 35vh;
+  }
 }
 
 .block-swiper {
@@ -44,6 +49,17 @@ $primary-color: #42567a;
   &:hover {
     cursor: pointer;
   }
+
+  @media (max-width: 900px) {
+    left: -55px;
+    top: calc(50% - 20px);
+    width: 40px;
+    height: 40px;
+  }
+
+  @media (hover: none) {
+    display: none;
+  }
 }
 
 .custom-swiper-button-next {
@@ -63,6 +79,17 @@ $primary-color: #42567a;
 
   &:hover {
     cursor: pointer;
+  }
+
+  @media (max-width: 900px) {
+    right: -55px;
+    top: calc(50% - 20px);
+    width: 40px;
+    height: 40px;
+  }
+
+  @media (hover: none) {
+    display: none;
   }
 }
 

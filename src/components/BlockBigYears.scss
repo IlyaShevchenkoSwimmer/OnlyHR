@@ -19,5 +19,14 @@ $blue-color: #3877ee;
     &:nth-last-child(odd) {
       color: $pink-color;
     }
+    @media (max-width: 425px) {
+      font-size: 14vw;
+    }
+  }
+
+  @media (max-width: 425px) {
+    top: calc(10vh + 19vw - 8vw);
+    width: 80%;
+    left: 10%;
   }
 }

@@ -36,8 +36,13 @@ export default function BlockSwiper({
           nextEl: ".custom-swiper-button-next",
           prevEl: ".custom-swiper-button-prev",
         }}
-        slidesPerView={4}
+        slidesPerView={2}
         spaceBetween={60}
+        breakpoints={{
+          426: {
+            slidesPerView: 4,
+          },
+        }}
         className="block-swiper"
       >
         {slides}

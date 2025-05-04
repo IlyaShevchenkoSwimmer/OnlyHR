@@ -20,6 +20,7 @@ export default function Block() {
         historicalDates={historicalDates}
         choosenDate={choosenDate}
         setChoosenDate={setChoosenDate}
+        previousDate={previousDate}
         setPreviousDate={setPreviousDate}
       />
       <BlockWheelArrows
@@ -27,11 +28,6 @@ export default function Block() {
         choosenDate={choosenDate}
         setChoosenDate={setChoosenDate}
         setPreviousDate={setPreviousDate}
-      />
-      <BlockBigYears
-        historicalDates={historicalDates}
-        choosenDate={choosenDate}
-        previousDate={previousDate}
       />
       <BlockSwiper
         historicalDates={historicalDates}

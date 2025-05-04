@@ -34,4 +34,9 @@ $primary-color: #42567a;
       }
     }
   }
+
+  @media (max-width: 425px) {
+    position: absolute;
+    bottom: -6vh;
+  }
 }

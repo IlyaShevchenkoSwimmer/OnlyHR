@@ -11,19 +11,20 @@ $primary-color: #42567a;
 
   &__button-wrapper {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 35%;
+    left: 35%;
+    width: 30%;
+    height: 30%;
     display: flex;
     justify-content: center;
   }
 
   &__button {
     position: absolute;
+    z-index: 99999;
     width: 6px;
     height: 6px;
-    top: -3px;
+    top: calc(-117% - 3px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,7 +41,7 @@ $primary-color: #42567a;
     &-active {
       width: 56px;
       height: 56px;
-      top: -28px;
+      top: calc(-117% - 28px);
       background-color: white;
       font-size: 1rem;
       cursor: pointer;
@@ -55,10 +56,14 @@ $primary-color: #42567a;
     &:hover {
       width: 56px;
       height: 56px;
-      top: -28px;
+      top: calc(-117% - 28px);
       background-color: white;
       font-size: 1rem;
       cursor: pointer;
     }
+  }
+
+  @media (max-width: 425px) {
+    display: none;
   }
 }

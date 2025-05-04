@@ -1,4 +1,9 @@
 .block {
   width: 85%;
   margin-top: 15vh;
+
+  @media (max-width: 425px) {
+    position: relative;
+    margin-top: 8vh;
+  }
 }
