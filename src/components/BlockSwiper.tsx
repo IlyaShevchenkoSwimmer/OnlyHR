@@ -22,7 +22,7 @@ export default function BlockSwiper({
   });
   const slides = historicalDates[choosenDate].years.map((year) => {
     return (
-      <SwiperSlide className="block-swiper__slide">
+      <SwiperSlide className="block-swiper__slide" key={year.year}>
         <h1>{year.year}</h1>
         <p>{year.description}</p>
       </SwiperSlide>
@@ -36,11 +36,11 @@ export default function BlockSwiper({
           nextEl: ".custom-swiper-button-next",
           prevEl: ".custom-swiper-button-prev",
         }}
-        slidesPerView={2}
+        slidesPerView={1.5}
         spaceBetween={60}
         breakpoints={{
           426: {
-            slidesPerView: 4,
+            slidesPerView: 4.5,
           },
         }}
         className="block-swiper"
